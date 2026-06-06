@@ -10,4 +10,9 @@
     <PackageReference Include="FastEndpoints" Version="7.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\Mediator\Mediator.csproj" />
+    <ProjectReference Include="..\..\libs\Results\Results.csproj" />
+  </ItemGroup>
+
 </Project>

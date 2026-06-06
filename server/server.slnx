@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="../libs/Mediator/Mediator.csproj" />
+  <Project Path="../libs/Results/Results.csproj" />
   <Project Path="Api/Api.csproj" />
   <Project Path="Contracts/Contracts.csproj" />
   <Project Path="Movies/Movies.csproj" />
