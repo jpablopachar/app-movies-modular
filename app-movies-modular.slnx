@@ -1,7 +1,0 @@
-<Solution>
-  <Folder Name="/libs/">
-    <Project Path="libs/Mediator/Mediator.csproj" />
-    <Project Path="libs/Results/Results.csproj" />
-  </Folder>
-  <Project Path="Api/Api.csproj" />
-</Solution>

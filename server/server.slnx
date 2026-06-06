@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Api/Api.csproj" />
+  <Project Path="Movies/Movies.csproj" />
+  <Project Path="Users/Users.csproj" />
+</Solution>
