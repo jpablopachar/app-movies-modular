@@ -15,4 +15,9 @@
     <ProjectReference Include="..\..\libs\Results\Results.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="MovieDetails\" />
+  </ItemGroup>
+
 </Project>
