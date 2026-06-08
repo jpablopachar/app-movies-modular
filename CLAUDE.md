@@ -65,3 +65,22 @@ Api → Users  → Contracts
 2. Implement `IRequestHandler<Query, Result<Response>>` in the feature module (`Movies` or `Users`).
 3. Create the FastEndpoints endpoint in the feature module, extending `ValidatedEndpoint<TRequest>` if validation is needed.
 4. If validation is required, implement `IValidator<TRequest>` in the feature module and ensure `AddModuleValidators` is called for that assembly in `Api/Program.cs`.
+
+## Code documentation
+
+All C# code must be documented in **Spanish** using standard .NET XML comments (`///`). Full rules are in [`.github/instructions/documentation.instructions.md`](.github/instructions/documentation.instructions.md).
+
+**What to document**: classes, interfaces, enums, records, delegates, public and internal methods, public and internal properties, non-trivial constructors.
+
+**Required tags by member type**:
+
+- Types (`class`, `interface`, `enum`, `record`): `<summary>` always.
+- Methods and constructors: `<summary>` + `<param>` for each non-obvious parameter + `<returns>` when not `void`/valueless `Task` + `<exception>` only for intentionally thrown exceptions.
+- Properties and enum values: `<summary>` always.
+
+**Project-specific conventions**:
+- Query records: describe what data they request and for which entity.
+- Response records: describe what information they return.
+- Handler classes: reference the query type with `<see cref="..."/>`.
+- Domain mutation methods (`internal`): document preconditions and thrown exceptions.
+- Use `<see langword="null"/>` / `<see langword="true"/>` / `<see langword="false"/>` instead of plain text for C# keywords.
