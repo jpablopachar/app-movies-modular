@@ -27,6 +27,11 @@
     <Folder Include="Data\Configurations\" />
     <Folder Include="Data\Domain\" />
     <Folder Include="Data\Repositories\" />
+    <Folder Include="Endpoints\" />
+    <Folder Include="Endpoints\AddMovie\" />
+    <Folder Include="Endpoints\CreateUser\" />
+    <Folder Include="Endpoints\GetUser\" />
+    <Folder Include="Endpoints\Login\" />
     <Folder Include="UseCases\" />
   </ItemGroup>
 
